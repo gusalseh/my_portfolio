@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>spoty-folio</title>
+        
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+<link
+	href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+	crossorigin="anonymous">
+<link href="css/styles.css" rel="stylesheet" />
+    
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+
+<script
+	src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+
+<link
+	href="https://fonts.googleapis.com/css2?family=Jua&amp;display=swap"
+	rel="stylesheet">
+
+<style>
+* {
+	font-family: "Do Hyeon", sans-serif;
+}
+
+.posting-box {
+	margin-top: 20px;
+	width: 500px;
+}
+
+.posting-box>.custom-file {
+	margin-bottom: 20px;
+}
+
+.wrap {
+	max-width: 900px;
+	width: 100%;
+	margin: auto;
+}
+
+.container {
+	padding-left: 50px;
+}
+</style>
+</head>
+
+<body style="background-color: #343a40;">
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-5" id="mainNav">
+            <div class="container mb-4">
+                <a class="navbar-brand" href="./index.html"> spoty-folio </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="./index.html#services"> 자기소개 </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#portfolio"> 포트폴리오 </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#about"> 타임라인 </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#team"> 다른 유저들 </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#contact"> 이 유저에게 질문!</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./mypage.html"> 나만의 아카이브 </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pay.html"> 구매 </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./login.html"> 로그인 </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	<div class="wrap mt-8">
+		<div class="jumbotron jumbotron-fluid" style="margin-top:5rem">
+			<div class="container">
+				<h1>나만의 일기장</h1>
+				<div class="posting-box">
+					<div class="custom-file">
+						<input type="file" class="custom-file-input" id="file"> <label
+							class="custom-file-label" for="file">사진 선택하기</label>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="title"
+							placeholder="사진 제목">
+					</div>
+					<div class="form-group">
+						<textarea placeholder="내용 입력" class="form-control" id="content"
+							rows="3"></textarea>
+					</div>
+					<button onclick="update_profile()" type="submit"
+						class="btn btn-primary">저장하기</button>
+				</div>
+			</div>
+		</div>
+		<div class="card-columns" id="cards-box">
+			<div class="card">
+				<img src="assets/img/diary/1.jpeg" class="card-img-top">
+				<div class="card-body">
+					<h5 class="card-title">창덕궁</h5>
+					<p class="card-text">선선하고 너무 덥지도 않고. 좋았다.</p>
+					<p class="card-text">
+						<small class="text-muted">2021.3.27</small>
+					</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="assets/img/diary/4.jpeg" class="card-img-top">
+				<div class="card-body">
+					<h5 class="card-title">서울의 밤</h5>
+					<p class="card-text">간판이 참 많았다. 북적북적한 골목들.</p>
+					<p class="card-text">
+						<small class="text-muted">2020.5.2</small>
+					</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="assets/img/diary/2.jpeg" class="card-img-top">
+				<div class="card-body">
+					<h5 class="card-title">서울숲</h5>
+					<p class="card-text">서울숲에 강아지와 함께 나들이</p>
+					<p class="card-text">
+						<small class="text-muted">2021.5.27</small>
+					</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="assets/img/diary/5.jpeg" class="card-img-top">
+				<div class="card-body">
+					<h5 class="card-title">강아지</h5>
+					<p class="card-text">어느집 강아지가 이렇게 귀엽대</p>
+					<p class="card-text">
+						<small class="text-muted">2021.2.17</small>
+					</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="assets/img/diary/2.jpeg" class="card-img-top">
+				<div class="card-body">
+					<h5 class="card-title">어떤 풍경</h5>
+					<p class="card-text">어딘지 알 수가 없다! 좋아서 스크랩!</p>
+					<p class="card-text">
+						<small class="text-muted">2021.6.10</small>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+		        <footer class="footer py-4 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; SPOTY-FOLIO 2021</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!"> 회사정책 </a>
+                        <a class="link-dark text-decoration-none" href="#!"> 고객센터 </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+</html>

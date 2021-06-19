@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>spoty-folio</title>
+        
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+<link
+	href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+	crossorigin="anonymous">
+<link href="css/styles.css" rel="stylesheet" />
+
+<style>
+	.material-icons.md-18 {font-size: 18px;}
+	.material-icons.md-24 {font-size: 24px;}
+	.material-icons.md-36 {font-size: 36px;}
+	.material-icons.md-48 {font-size: 48px;}
+</style>
+<script>
+	function sumValue() {
+		let a = document.getElementById("v1").value;
+		let b = document.getElementById("v2").value;
+		document.getElementById("v3").innerHTML = Number(a) + Number(b);
+	}
+</script>
+	
+</head>
+
+<body style="background-color: #343a40;">
+
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-5" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"> spoty-folio </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="./index.html#services"> 자기소개 </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#portfolio"> 포트폴리오 </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#about"> 타임라인 </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#team"> 다른 유저들 </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#contact"> 이 유저에게 질문!</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./mypage.html"> 나만의 아카이브 </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pay.html"> 구매 </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./login.html"> 로그인 </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+	<div class="container">
+		<div class="py-5 text-center mt-5">
+		</div>
+		<div class="row g-5">
+			<div class="col-md-7 col-lg-8">
+				<h4 class="mb-4" style="color: #ffc800">유료 포트폴리오 결제</h4>
+				<form class="needs-validation was-validated" novalidate>
+					<div class="row g-3">
+						<div class="col-sm-1"></div>
+						<div class="card col-sm-4 mt-4 mb-4">
+							<img class="card-img-top" src="assets/img/portfolio/2.jpg" alt="...">
+							<div class="card-body">
+								<h5 class="card-title"> 나만의 쇼핑몰 만들기 </h5>
+								<p class="card-text">Node.Js를 활용하여 서버통신이 가능한 실제 쇼핑몰을 만들었습니다</p>
+								<div class="text-center mt-4"><input type="checkbox" style="zoom: 1.5;" aria-label="Checkbox for following text input"></div>
+							</div>
+						</div>
+						<div class="col-sm-2"></div>
+						<div class="card col-sm-4 mt-4 mb-4">
+							<img class="card-img-top" src="assets/img/portfolio/2.jpg" alt="...">
+							<div class="card-body">
+								<h5 class="card-title"> 나만의 국어사전 만들기 </h5>
+								<p class="card-text">open API를 이용해 나만의 국어사전 웹 페이지를 만들었습니다</p>
+								<div class="text-center mt-4"><input type="checkbox" style="zoom: 1.5;" aria-label="Checkbox for following text input"></div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<label for="firstName" class="form-label" style="color: #ffc800"> 이름 </label> <input
+								type="text" class="form-control" id="firstName" placeholder
+								value required>
+							<div class="invalid-feedback"> 유효한 이름을 입력하세요.
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<label for="lastName" class="form-label" style="color: #ffc800"> 성 </label> <input
+								type="text" class="form-control" id="lastName" placeholder value
+								required>
+							<div class="invalid-feedback"> 유효한 성을 입력하세요.
+							</div>
+						</div>
+						<div class="col-12">
+							<label for="email" class="form-label" style="color: #ffc800"> 이메일 <span
+								class="text-muted">선택사항</span></label> <input type="email"
+								class="form-control" id="email" placeholder="you@example.com">
+							<div class="invalid-feedback"> 배송을 위한 유효한 이메일을 입력하세요. </div>
+						</div>
+						<div class="col-12">
+							<label for="address" class="form-label" style="color: #ffc800"> 주소 </label> <input
+								type="text" class="form-control" id="address"
+								placeholder="서울특별시 ..." required>
+							<div class="invalid-feedback"> 주소를 입력해주세요. </div>
+						</div>
+						<div class="col-12">
+							<label for="address2" class="form-label" style="color: #ffc800"> 상세주소 <span
+								class="text-muted">(추가사항)</span></label> <input type="text"
+								class="form-control" id="address2"
+								placeholder="상세주소">
+						</div>
+						<div class="col-md-5">
+							<label for="country" class="form-label" style="color: #ffc800"> 국가 </label> <select
+								class="form-select" id="country" required>
+								<option value="">선택</option>
+								<option>대한민국</option>
+								<option>미국</option>
+								<option>일본</option>
+								<option>중국</option>
+								<option>캐나다</option>
+								<option>유럽</option>
+							</select>
+							<div class="invalid-feedback">유효한 국가를 선택하세요.</div>
+						</div>
+						<div class="col-md-4">
+							<label for="state" class="form-label" style="color: #ffc800">주/도/시</label> <select
+								class="form-select" id="state" required>
+								<option value="">선택</option>
+								<option>서울특별시</option>
+								<option>경기도</option>
+								<option>강원도</option>
+								<option>충청도</option>
+								<option>경상도</option>
+								<option>전라도</option>
+								<option>제주도</option>
+							</select>
+							<div class="invalid-feedback">유효한 정보를 선택하세요.
+							</div>
+						</div>
+						<div class="col-md-3">
+							<label for="zip" class="form-label" style="color: #ffc800">우편번호</label> <input
+								type="text" class="form-control" id="zip" placeholder=""
+								required>
+							<div class="invalid-feedback">우편번호를 입력하세요.</div>
+						</div>
+						<hr class="my-4">
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="save-info">
+							<label class="form-check-label" for="save-info">결제정보를 저장합니다.</label>
+						</div>
+						<hr class="my-4">
+						<h4 class="mb-3" style="color: #ffc800">결제</h4>
+						<div class="my-3">
+							<div class="form-check">
+								<input id="credit" name="paymentMethod" type="radio"
+									class="form-check-input" checked="" required=""> <label
+									class="form-check-label" for="credit">신용카드</label>
+							</div>
+							<div class="form-check">
+								<input id="debit" name="paymentMethod" type="radio"
+									class="form-check-input" required=""> <label
+									class="form-check-label" for="debit">체크카드</label>
+							</div>
+							<div class="form-check">
+								<input id="paypal" name="paymentMethod" type="radio"
+									class="form-check-input" required=""> <label
+									class="form-check-label" for="paypal">삼성페이</label>
+							</div>
+						</div>
+						<div class="row gy-3">
+							<div class="col-md-6">
+								<label for="cc-name" class="form-label" style="color: #ffc800">카드 명의자</label> <input
+									type="text" class="form-control" id="cc-name" placeholder=""
+									required=""> <small class="text-muted">카드에 명시된 이름을 입력하세요.</small>
+								<div class="invalid-feedback">유효한 이름을 입력하세요.</div>
+							</div>
+
+							<div class="col-md-6">
+								<label for="cc-number" class="form-label" style="color: #ffc800">신용카드 번호
+									</label> <input type="text" class="form-control" id="cc-number"
+									placeholder="" required="">
+								<div class="invalid-feedback">유효한 카드번호를 입력하세요.</div>
+							</div>
+
+							<div class="col-md-3">
+								<label for="cc-expiration" class="form-label" style="color: #ffc800">유효기간</label>
+								<input type="text" class="form-control" id="cc-expiration"
+									placeholder="" required="">
+								<div class="invalid-feedback">유효기간을 입력하세요.</div>
+							</div>
+
+							<div class="col-md-3">
+								<label for="cc-cvv" class="form-label" style="color: #ffc800">CVV</label> <input
+									type="text" class="form-control" id="cc-cvv" placeholder=""
+									required="">
+								<div class="invalid-feedback">카드 뒷면의 cvv를 입력하세요.</div>
+							</div>
+						</div>
+						<hr class="my-4">
+						<button class="w-100 btn btn-primary btn-lg" data-bs-toggle="modal" type="submit"> 결제하기 </button>
+					</form>
+				</div>
+			</div>
+			
+			<div class="col-md-5 col-lg-4">
+				<h4 class="d-flex justify-content-between align-items-center mb-3">
+					<span class="text-primary"> 나의 장바구니 </span>
+					<button onclick="openClose()" id="btn-post-box" type="button"
+					class="btn btn-primary rounded-pill">2</button>
+				</h4>
+				<ul class="list-group mb-3">
+					<li class="list-group-item">1
+						<div>
+							<h6 class="my-0"> 나만의 쇼핑몰 만들기 </h6>
+							<small class="text-muted">도현민 유저의 포트폴리오</small>	
+						</div>
+						<span class="text-muted" id="v1">50000원</span>
+					</li>
+					<li class="list-group-item">2
+						<div>
+							<h6 class="my-0"> 나만의 국어사전 만들기</h6>
+							<small class="text-muted">도현민 유저의 포트폴리오</small>	
+						</div>
+						<span class="text-muted" id="v2">30000원</span>
+					</li>
+					<li class="list-group-item" style="color: blue;">
+						<div>
+							<h6 class="my-0"> 추천인 할인</h6>
+							<small class="text-muted"></small>	
+						</div>
+						<span class="text-muted">-5000원</span>
+					</li>
+					<li class="list-group-item">
+						<div>
+							<h6 class="my-0"> 합계 </h6>
+							<small class="text-muted"></small>	
+						</div>
+						<span class="text-muted" id="v3">75000원</span>
+					</li>
+				</ul>
+				<form class="card p-2">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="추천인코드">
+						<button type="submit" class="btn btn-secondary btn-sm"> 적용 </button>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	        <footer class="footer py-4 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; SPOTY-FOLIO 2021</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!"> 회사정책 </a>
+                        <a class="link-dark text-decoration-none" href="#!"> 고객센터 </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
+</body>
+</html>
